@@ -14,7 +14,7 @@
 <img src="http://i.imgur.com/RP0apJN.jpg"/>
 <img src="http://i.imgur.com/w1p4aNN.gif"/></div>
 
-To change the pics, just add the code below with a different link in the `Custome CSS` tab of the `BetterDiscord` settings:
+To change the background, just add the code below with a different link in the `Custome CSS` tab of the `BetterDiscord` settings:
 + ( Be sure to add the `s` after `http` when you change the pic or it won't appear )
 ```css
 /*First Background*/
@@ -37,9 +37,7 @@ To change the pics, just add the code below with a different link in the `Custom
 <img src="http://i.imgur.com/QhU9gvh.jpg"/>
 <img src="http://i.imgur.com/ng5Kmpt.gif"/></div>
 
-To change the pics, just add the code below with a different link in the `Custome CSS` tab of the `BetterDiscord` settings:
-+ ( Be sure to add the `s` after `http` when you change the pic or it won't appear )
-
+Code for the background picture:
 ```css
 /*First Background*/
 .app {
