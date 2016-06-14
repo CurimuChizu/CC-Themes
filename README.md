@@ -14,8 +14,7 @@
 <img src="http://i.imgur.com/RP0apJN.jpg"/>
 <img src="http://i.imgur.com/w1p4aNN.gif"/></div>
 
-To change the background, just add the code below with a different link in the `Custome CSS` tab of the `BetterDiscord` settings:
-+ ( Be sure to add the `s` after `http` when you change the pic or it won't appear )
+To change the background, just add the code below with a different link in the `Custome CSS` tab of the `BetterDiscord` settings:( Also be sure to add the `s` after `http` when you change the pic or it won't appear )
 ```css
 /*First Background*/
 .app {
