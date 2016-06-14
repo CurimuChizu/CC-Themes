@@ -8,7 +8,7 @@
 + Step 5: Restart Discord (CMD+R or CTRL+R)
 + Step 6: Open Discord Settings>BetterDiscord>Themes>Enable the theme
 
-#<DIV ALIGN=CENTER><a href="http://github.com/CurimuChizu/Red-n-Black/blob/master/Red%20n%20Black.theme.css">Red n Black</a></div>
+#<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC%20Themes/Red%20n%20Black.theme.css">Red n Black</a></div>
 <DIV ALIGN=CENTER><b><i>A theme based red and black with a hint of anime</i></b>
 <img src="http://i.imgur.com/v7T0Tqk.jpg"/>
 <img src="http://i.imgur.com/RP0apJN.jpg"/>
