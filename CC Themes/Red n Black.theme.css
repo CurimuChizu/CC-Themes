@@ -6,21 +6,22 @@ Hex color for hovering: #6f0000
 Hex color for texts: #D89191 
 */
 
-/* Background */
+/* Backgrounds */
+
 .app {
-    background-image: url("https://i.imgur.com/q8NCGHH.jpg") !important;
-    background-size: cover !important;
-    background-position: center;
-}
-.callout-backdrop {
-    opacity:0.9!important;
-    background: url("https://i.imgur.com/q8NCGHH.jpg")!important;
+    background-image: url("https://i.imgur.com/q8NCGHH.jpg");
     background-size: cover !important;
     background-position: center !important;
 }
+.callout-backdrop {
+    background: url("https://i.imgur.com/q8NCGHH.jpg");
+    background-size: cover !important;
+    background-position: center !important;
+    opacity:0.9 !important;
+}
 .bda-backdrop {
-    background: url("https://i.imgur.com/NUhSyNd.jpg");
-    background-size: cover;
+    background: url("https://i.imgur.com/NUhSyNd.jpg")!important;
+    background-size: cover!important;
 }
 
 /* Main Chat */
@@ -39,6 +40,10 @@ Hex color for texts: #D89191
 .message-group .mentioned .message-text:after {
     border-left: 4px solid #9f0000;
     background: rgba(250, 26, 26, 0.2);
+}
+.message-group .mentioned .message-text {
+    background: rgba(250, 26, 26, 0.2);
+    border-radius: 0 2px 2px 0;
 }
 .theme-dark .messages-wrapper .messages .mentioned .message-text {
     background: rgba(250, 26, 26, 0.1);
@@ -127,7 +132,7 @@ Hex color for texts: #D89191
 }
 .chat>.content .messages .message-group .markup .highlight:hover {
     color: #9f0000 !important;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .mentioned .highlight:hover {
     color: #9f0000;
@@ -160,10 +165,20 @@ Hex color for texts: #D89191
     background: rgba(0, 0, 0, 0.62);
 }
 .theme-dark .messages-wrapper .messages .message-group .comment .markup code.inline {
-    background: rgba(62, 2, 0, 0.62) !important;
+    background: rgba(159, 0, 0, 0.58) !important;
     color: rgba(255, 255, 255, 0.7) !important;
-    padding: 0.3em 0.6em;
-} 
+    padding: 0.2em 0.6em;
+}
+.message-group .comment .markup code.inline {
+    background: transparent;
+}
+.message-group .comment .markup pre {
+    background: transparent;
+    border: none;
+ }
+.message-group .comment .markup pre code {
+    background: transparent;
+ }
 .theme-dark .messages-wrapper .messages .message-group .comment .edited {
     color: hsla(0,0%,98%,0.50);
 }
@@ -223,6 +238,44 @@ a:link {
 }
 .bot-tag {
     background: #9f0000;
+}
+
+/* Pin it */
+.theme-dark .chat .jump-to-present-bar {
+    background-color: #9f0000;
+}
+.theme-dark .chat .jump-to-present-bar:hover {
+    background-color: #6f0000;
+}
+.chat .jump-to-present-bar {
+	color: white;
+}
+.modal-content .form-inner p {
+    color: #fff;
+}
+.theme-dark .channel-pins-wrap .channel-pins .message-group {
+    border-color: #9f0000;
+    background-color: rgba(173, 0, 0, 0.3);
+}
+.chat .jump-to-present-bar .spinner .spinner-item {
+    background-color: #fff;
+}
+.theme-dark .channel-pins-wrap .channel-pins .message-group:hover .action-buttons {
+    box-shadow: 0 0 4px 4px #9f0000;
+    background-color: #9f0000;
+}
+.theme-dark .channel-pins-wrap .channel-pins .message-group .action-buttons .jump-button {
+    background-color: #9f0000;
+    color: hsla(0, 0%, 100%, 0.84);
+}
+.theme-dark .channel-pins-wrap .channel-pins .message-group:hover {
+    border-color: #6f0000;
+}
+.theme-dark .message-group .comment .markup code.inline {
+	background: #9f0000;
+}
+.theme-dark .channel-pins-wrap .footer {
+    background-color: rgba(72, 0, 0, 0.6);
 }
 
 /* Guilds */
@@ -373,8 +426,8 @@ a:link {
     background-image: url(https://i.imgur.com/DkH1Q2r.png);
 }
 .account .btn-settings:after {
-    background-image: url(https://i.imgur.com/oytSj9D.png);
-    opacity: .5;
+    background-image: url(https://i.imgur.com/0Po0XLE.png);
+    opacity: .8;
     background-size: 80%;
 }
 .account .btn-settings:hover:after {
@@ -393,6 +446,16 @@ a:link {
 }
 .account .btn-mute.disabled:hover:after {
     background-image: url(https://i.imgur.com/iOsaRAQ.png);
+}
+.guild-channels .channel-voice-states li .icon-muted {
+    background-image: url(https://i.imgur.com/euaRpHc.png);
+    background-size: 120%;
+    opacity: 0.7 !important;
+}
+.guild-channels .channel-voice-states li .icon-deafened {
+    background-image: url(https://i.imgur.com/rsqYgPF.png);
+    background-size: 120%;
+    opacity: 0.7 !important;
 }
 .guilds-wrapper .guilds .guild .badge {
     background-color: #9f0000;
@@ -441,36 +504,49 @@ a:link {
 .tooltip.tooltip-top:after {
     border-top-color: #9f0000;
 }
-#voice-connection .btn-group {
-    border: 1px solid #9f0000;
-    border-radius: 20px;
+#voice-connection .btn-group,
+#voice-connection .btn-disconnect {
+    border: none;
+    box-shadow: none;
 }
 #voice-connection .btn {
-    background: rgb(38, 12, 12);
+    background: transparent;
 }
 #voice-connection .btn:active {
-    background: rgb(70, 23, 23);
+    background: transparent;
     box-shadow: inset 0 0 4px rgba(0,0,0,.06);
 }
 #voice-connection {
     border-top: none !important;
-    padding: 15px 20px 15px 18px !important;
 }
-#voice-connection .btn-info,
-#voice-connection .btn-disconnect {
-    border-radius: 20px;
-    box-shadow: none;
+#voice-connection .voice-connection-channel {
+    opacity: 0.8;
 }
 #voice-connection .btn-disconnect:hover:after,
 #voice-connection .btn-info:hover:after {
-    background-color: #9f0000;
     border-radius: 20px;
+    background-color: #9f0000;
 }
 #voice-connection .btn-info {
-    border-right: 1px solid #9f0000;
+    border-right: none;
 }
-#voice-connection .btn-disconnect {
-    border-left: 1px solid #9f0000;
+#voice-connection .btn-info:after {
+    background-image: url(https://i.imgur.com/tQPOxxr.png);
+    opacity: 1;
+    background-size: 80%;
+}
+#voice-connection .btn-disconnect:after {
+    background-image: url(https://i.imgur.com/zeccb4D.png);
+    opacity: 1;
+    background-size: 80%;
+}
+#voice-connection .btn-info:hover:after {
+    background-image: url(https://i.imgur.com/7PlilIx.png);
+    opacity: 1;
+}
+#voice-connection .btn-disconnect:hover:after {
+    background-image: url(https://i.imgur.com/LAyMjfz.png);
+    opacity: 1;
 }
     
 /* Public Button */
@@ -479,6 +555,9 @@ a:link {
 }
 .guilds-wrapper .guilds .guild .guild-inner:hover {
     background: #6f0000 !important;
+}
+.guilds-wrapper .guilds .guild.audio .guild-inner:after {
+    background-color: #9f0000;
 }
 #pubs-header input:focus {
     width: 150px;
@@ -549,6 +628,9 @@ a:link {
 .guild-channels .channel-text .channel-name:before {
     content: '♔';
     color: rgb(189, 0, 0)!important;
+}
+.guild-channels .channel-text.selected a {
+    color: #BF0000;
 }
 .chat>.title-wrap>.title .channel-name:before {
     content: '♔';
@@ -1191,6 +1273,9 @@ a:link {
 .radio .radio-inner span:after {
     background: #9f0000;
 }
+.radio-theme input[type=radio]:checked~label {
+    border-color: #9f0000;
+}
 .region-select {
     background-color: rgba(0, 0, 0, 0);
 }
@@ -1339,15 +1424,18 @@ a:link {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: .08em;
-    font-weight: 600;
-    padding: 4px 58px;
-    background-color: rgba(0, 0, 0, 0.24);
-    border: 1px solid;
-    border-color: transparent;
+    font-weight: 500;
+    padding: 1px 20px;
+    background-color: rgba(0, 0, 0, 0.44);
+    border-color: rgb(130, 0, 0);
     border-radius: 3px;
-    width: 90px;
-    margin-left: 15px;
-    text-align: center
+    margin-left: 35px;
+    text-align: center;
+    border-bottom: 2px solid;
+    margin-right: 20px;
+}
+.channel-members .member+h2 {
+    margin-top: 10px;
 }
 .channel-members-wrap {
     min-width: 240px;
@@ -1404,8 +1492,22 @@ a:link {
     background-color: #9f0000;
     border-radius: 7px;
 }
+.theme-dark .channel-pins-wrap {
+    background-color: rgba(0, 0, 0, 0.79);
+    border: 1px solid rgba(255, 0, 0, 0.6);
+    box-shadow: none;
+}
+.theme-dark .channel-pins-wrap .header {
+    background-color: #9f0000;
+    box-shadow: none;
+}
 .theme-dark .header-toolbar button.active {
-    background-color: hsla(0, 100%, 35%, 0.65);
+    background-color: hsla(0, 100%, 25%, 0);
+    border-bottom: 2px solid #9f0000;
+    border-radius: 7px;
+}
+.theme-dark .header-toolbar .separator {
+    background-color: #9f0000;
 }
 .bot-tag.bot-tag-invert {
     background: #9f0000;
@@ -1434,13 +1536,7 @@ a:link {
 .scroller-wrap .scroller {
     overflow-y: scroll;
 }
-.theme-dark .chat>.content:first-child .scroller-wrap::-webkit-scrollbar-thumb {
-    background-color: #9f0000;
-}
-.scroller-wrap .scroller::-webkit-scrollbar-thumb {
-    background-color: #9f0000 !important;
-    border: 3px solid rgba(211, 5, 5, 0) !important;
-}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb,
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
     background-color: #9f0000 !important;
     border: 3px solid rgba(211, 5, 5, 0) !important;
@@ -1448,6 +1544,10 @@ a:link {
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
     border: 3px solid rgba(255, 255, 255, 0) !important;
     background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.theme-dark .chat>.content:first-child .scroller-wrap::-webkit-scrollbar-thumb {
+    background-color: #9f0000;
 }
 .is-open.is-focused .Select-menu::-webkit-scrollbar,
 .is-open.is-focused .Select-menu::-webkit-scrollbar-track-piece{
@@ -1457,6 +1557,23 @@ a:link {
 .is-open.is-focused .Select-menu::-webkit-scrollbar-thumb {
     background: #9f0000;
     border-radius: 10px;
+}
+.CodeMirror > ::-webkit-scrollbar-thumb {
+    background-color: #9f0000 !important;
+    border-radius: 6px;
+}
+.CodeMirror > ::-webkit-scrollbar-track-piece {
+    background-color: #9f0000 !important;
+    border-radius: 6px;
+}
+.CodeMirror-hscrollbar .scroller::-webkit-scrollbar-thumb,
+.CodeMirror-hscrollbar .scroller::-webkit-scrollbar-track-piece {
+    background-color: #9f0000 !important;
+    border: 3px solid rgba(211, 5, 5, 0) !important;
+}
+.CodeMirror-hscrollbar .scroller::-webkit-scrollbar-track-piece {
+    border: 3px solid rgba(255, 255, 255, 0) !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
 
@@ -1514,18 +1631,25 @@ scroller.settings-wrapper.settings-panel {
     background: rgba(0,0,0,0);
 }
 .tab-bar.SIDE {
-    background-image: url(https://a.pomf.cat/somigb.png);
-    background-size: 60%;
+    background-image: url(https://i.imgur.com/W4Dob9k.png);
+    background-size: 85%;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 520px;
-    background-position-x: 30px;
+    background-position-y: 480px;
+    background-position-x: 18px;
 }
 .tab-bar.SIDE .tab-bar-item:before {
     border-left: 4px solid #9f0000;
 }
-.tab-bar.SIDE .tab-bar-item.selected, 
+.tab-bar.SIDE .tab-bar-item {
+    color: hsla(0, 0%, 100%, 0.64);
+}
+.tab-bar.SIDE .tab-bar-item.selected{
+    color: #9f0000;
+    background: rgba(0, 0, 0, 0.5);
+}
 .tab-bar.SIDE .tab-bar-item:hover {
+    color: #9f0000;
     background: rgba(0, 0, 0, 0.5);
 }
 .form .control-group input[type=email], 
@@ -1556,7 +1680,7 @@ scroller.settings-wrapper.settings-panel {
 }
 .form .control-group .Select-control .Select-placeholder {
     color: #FFF;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgb(0, 0, 0);
 }
 .form .control-group .Select-control {
     border: 1px solid #9f0000;
@@ -1568,15 +1692,6 @@ scroller.settings-wrapper.settings-panel {
     border: #9f0000;
     border-color: #9f0000;
     background: rgba(88, 0, 0, 0);
-}
-.bd-settings > div:last-child {
-    background: rgba(12, 0, 0, 0.42) !important;
-    color: #6f0000 !important;
-    height: 30px !important;
-    position: absolute !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
 }
 #editor-detached h3 {
     color: #C76C6C;
@@ -1684,6 +1799,15 @@ scroller.settings-wrapper.settings-panel {
 }
 
 /* Better Discord Settings */
+.bd-settings > div:last-child {
+    background: rgba(0, 0, 0, 0.83) !important;
+    color: #6f0000 !important;
+    height: 30px !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+}
 #bd-customcss-detach-container {
     position: absolute;
     width: 30%;
@@ -1755,6 +1879,19 @@ scroller.settings-wrapper.settings-panel {
 .bda-slist .checkbox:before {
     content: "Enable";
     color: #D89191;
+}
+.tab-bar.TOP .tab-bar-item.selected {
+    border-bottom: 2px solid #9f0000;
+    color: #9f0000;
+}
+.tab-bar.TOP .tab-bar-item {
+    color: #9f0000;
+}
+.tab-bar.TOP {
+    border-bottom: 1px solid #9f0000;
+}
+.tab-bar.TOP .tab-bar-item:hover {
+    border-bottom: 2px solid #9f0000;
 }
 
 /* Friends */
@@ -2065,6 +2202,14 @@ scroller.settings-wrapper.settings-panel {
     transition:all 100ms ease;
 } 
 
+/* Plugins Related */
+.detTubeWindow {
+    background-color: #9f0000 !important;
+}
+.search-bar {
+    background-color: rgb(0, 0, 0) !important;
+}
+
 /* Next Part in Progress */
 
 .form .control-group .is-focused:not(.is-open)>.Select-control {
@@ -2200,19 +2345,6 @@ scroller.settings-wrapper.settings-panel {
 .checkbox .checkbox-inner+span {
     color: #fff
 }
-.tab-bar.TOP .tab-bar-item.selected {
-    border-bottom: 2px solid #9f0000;
-    color: #9f0000;
-}
-.tab-bar.TOP .tab-bar-item {
-    color: #9f0000;
-}
-.tab-bar.TOP {
-    border-bottom: 1px solid #9f0000;
-}
-.tab-bar.TOP .tab-bar-item:hover {
-    border-bottom: 2px solid #9f0000;
-}
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
     background-color: #9f0000 !important;
     border-color: #9f0000 !important;
@@ -2297,6 +2429,16 @@ div.control-group .shortcut-recorder input[type=text] {
 .form .btn-primary:hover {
     background-color: #6f0000 !important;
 }
+.form .btn-default {
+    background-color: rgba(148, 6, 6, 0.84);
+    border-bottom: 2px solid rgba(4, 0, 0, 0.61);
+    border-radius: 3px;
+    width: 70px;
+    color: #F8EDED;
+}
+.form .btn-default:hover {
+    border-bottom: 2px solid #BD0000;
+}
 .markdown-modal {
     background-color: rgba(0, 0, 0, 0.86);
     color: #330A0A;
@@ -2309,12 +2451,8 @@ div.control-group .shortcut-recorder input[type=text] {
 .checkbox .checkbox-inner span {
     border: 2px solid #6f0000;
 }
-.form .btn-default {
-    background-color: #690000;
-    border-bottom: 2px solid rgba(156, 0, 0, 0.61);
-}
 .btn-confirm.active .btn:last-of-type:not(:first-of-type) {
-    background-color: rgba(189, 5, 5, 0.57);
+    background-color: #9f0000;
 }
 .btn-confirm.active .btn:last-of-type:not(:first-of-type):hover {
     background: #6f0000;
@@ -2329,13 +2467,6 @@ div.control-group .shortcut-recorder input[type=text] {
     background-color: #9f0000;
     color: #fff;
 }
-.form .btn-default:hover {
-    border-bottom: 2px solid #BD0000;
-}
-.form .btn-default {
-    background-color: #800202;
-    border-bottom: 2px solid rgba(4, 0, 0, 0.61);
-}
 .need-help-modal .footer {
     background-color: rgba(125, 0, 0, 0.7);
     border-top: 1px solid #C30606;
@@ -2349,13 +2480,6 @@ div.control-group .shortcut-recorder input[type=text] {
     text-transform: uppercase;
     color: #6f0000;
     display: block;
-}
-.form .btn-default {
-    background-color: rgba(148, 6, 6, 0.84);
-    border-bottom: 2px solid rgba(4, 0, 0, 0.61);
-    border-radius: 3px;
-    width: 80px;
-    color: #F8EDED;
 }
 .markdown-modal .markdown-modal-header {
     border-bottom: 1px solid #9f0000;
