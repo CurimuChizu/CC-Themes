@@ -1,4 +1,4 @@
-//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.5v"}*//
+//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.6v"}*//
 
 /* 
 Hex color for everything: #9f0000
@@ -40,6 +40,10 @@ Hex color for texts: #D89191
 .message-group .mentioned .message-text:after {
     border-left: 4px solid #9f0000;
     background: rgba(250, 26, 26, 0.2);
+}
+.theme-dark .friends-table .messages .mentioned .message-text, 
+.theme-dark .messages-wrapper .messages .mentioned .message-text {
+    animation: mentioned-pulse 1.5s infinite;
 }
 .message-group .mentioned .message-text {
     background: rgba(250, 26, 26, 0.2);
@@ -644,101 +648,77 @@ a:link {
     background-size: 128px 128px;
     border-radius: 10%;
 }
-
 #user-profile-modal header {
     background-image: none;
     background-color: #9f0000;
 }
-
 #user-profile-modal footer button {
     color: #9f0000;
 }
 #user-profile-modal .avatar-profile {
     border: 6px solid #9f0000 !important;
 }
-
 #user-profile-modal footer {
-    border-top: 1px solid hsl(0, 99%, 40%);
-    background: #fff;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-    padding: 14px 20px;
+    border-top: none;
 }
-
 #user-profile-modal footer {
     background-color: rgba(21, 0, 0, 0.92)!important;
 }
-
 #user-profile-modal footer .btn.add-friend {
     background: #9f0000;
+    animation: friend-request-pulse 1.5s infinite;
 }
-
 #user-profile-modal footer .btn.add-friend:hover {
     background: #6f0000;
 }
-
 #user-profile-modal .btn {
     background-color: #B90808;
 }
-
 #user-profile-modal .btn:hover {
     background-color: #6f0000;
 }
-
 #user-profile-modal .header {
     background-color: rgba(0, 0, 0, 0.78);
     background-image: none;
 }
-
 #user-profile-modal .sub-header {
     background: rgba(0, 0, 0, 0.78);
 }
-
 #user-profile-modal .scroller {
     background: rgba(92, 0, 0, 0.78);
 }
-
 #user-profile-modal .guilds .guild:hover {
     background: linear-gradient(90deg, rgba(169, 4, 4, 0.45) 90%, rgba(0, 0, 0, 0.4));
     color: #FFFFFF;
 }
-
 #user-profile-modal .guilds .guild {
     color: rgba(255, 255, 255, 0.82);
-    padding: 5px 20px;
-    padding-right: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    line-height: 30px;
 }
-
 #user-profile-modal .tab-bar {
     background: rgba(39, 1, 1, 0.82);
     border-bottom: 1px solid #650101;
 }
-
 #user-profile-modal .empty {
     background: rgba(92, 0, 0, 0.580392);
 }
-
 #user-profile-modal .empty .empty-text {
-    margin-top: 12px;
-    font-size: 14px;
-    line-height: 16px;
     color: #B70404;
-    font-weight: 600;
-    text-transform: uppercase;
 }
-
 #user-profile-modal footer .btn.disabled {
     background: #840000 !important;
 }
-
 #user-profile-modal footer .btn.disabled:hover {
     background: #6f0000 !important;
+}
+#user-profile-modal footer .pending p img {
+    display: none;
+}
+#user-profile-modal footer .pending p {
+    color: #9f0000;
+}
+#user-profile-modal footer .btn.reject-friend {
+    background: #65676b;
+    animation: reject-friend-pulse 1.5s infinite;
 }
 
 /* Emoji/Emotes */
@@ -970,15 +950,15 @@ a:link {
     color: #9f0000;
 }
 .theme-dark.context-menu .item.danger {
-    color: #B90202!important;
-    background: rgba(85, 0, 0, 0.77);
+    color: #9f0000 !important;
+    background: transparent;
 }
 .context-menu {
     background: #5D0000;
 }
 .context-menu .item.danger {
     color: #fff!important;
-    background-color: #5D0000 !important;
+    background-color: transparent;
 }
 .context-menu .item.danger:hover {
     color: #fff!important;
@@ -1002,6 +982,12 @@ a:link {
 .theme-dark.context-menu .item.disabled:hover {
     color: #fff;
     background-color: #6f0000 !important;
+}
+.theme-dark.context-menu .item-group {
+    border-color: hsla(0, 0%, 96%, 0);
+}
+.theme-dark .checkbox .checkbox-inner span {
+    border-color: #9f0000;
 }
 
 /* Uploading */
@@ -1481,7 +1467,7 @@ a:link {
     border-radius: 10px;
 }
 .theme-dark.context-menu .item-subMenu {
-    background: #350000 url(/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
+    background: url(/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
 }
 .theme-dark.context-menu .context-menu {
     background: rgba(0, 0, 0, 0.73);
@@ -1937,6 +1923,10 @@ scroller.settings-wrapper.settings-panel {
 .private-channels .channel:not(.selected):hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, rgba(46, 49, 54, 0)) !important;
 }
+.private-channels .search-bar input:focus {
+    border: 2px solid #9f0000;
+    animation: input-pulse 1.5s infinite;
+}
 #friends .btn {
     background-color: #9f0000;
 }
@@ -2013,31 +2003,23 @@ scroller.settings-wrapper.settings-panel {
     70% {box-shadow: 0 0 10px 10px rgba(241, 71, 71, 0);}
     to {box-shadow: 0 0 0 0 rgba(241, 71, 71, 0);}
 }
-.theme-dark .friends-table .messages .mentioned .message-text, 
-.theme-dark .messages-wrapper .messages .mentioned .message-text {
-    animation: mentioned-pulse 1.5s infinite;
-}
 @-webkit-keyframes mentioned-pulse {
     0% {box-shadow: 0 0 0 0 #9f0000;}
     70% {box-shadow: 0 0 10px 10px rgba(241, 71, 71, 0);}
     to {box-shadow: 0 0 0 0 rgba(241, 71, 71, 0);}
-}
-.private-channels .search-bar input:focus {
-    border: 2px solid #9f0000;
-    webkit-animation: input-pulse 1.5s infinite;
-    animation: input-pulse 1.5s infinite;
 }
 @-webkit-keyframes input-pulse {
     0% {box-shadow: 0 0 0 0 #9f0000;}
     70% {box-shadow: 0 0 10px 10px rgba(241, 71, 71, 0);}
     to {box-shadow: 0 0 0 0 rgba(241, 71, 71, 0);}
 }
-#user-profile-modal footer .btn.add-friend {
-    webkit-animation: friend-request-pulse 1.5s infinite;
-    animation: friend-request-pulse 1.5s infinite;
-}
 @-webkit-keyframes friend-request-pulse {
     0% {box-shadow: 0 0 0 0 #9f0000;}
+    70% {box-shadow: 0 0 10px 10px rgba(241, 71, 71, 0);}
+    to {box-shadow: 0 0 0 0 rgba(241, 71, 71, 0);}
+}
+@-webkit-keyframes reject-friend-pulse {
+    0% {box-shadow: 0 0 0 0 #65676b;}
     70% {box-shadow: 0 0 10px 10px rgba(241, 71, 71, 0);}
     to {box-shadow: 0 0 0 0 rgba(241, 71, 71, 0);}
 }
@@ -2172,7 +2154,6 @@ scroller.settings-wrapper.settings-panel {
     animation-timing-function: ease-out;
     animation-duration: 200ms;
 }
-
 @keyframes checked {
     0% {
         transform: rotate(-45deg) scale(0);
@@ -2182,8 +2163,6 @@ scroller.settings-wrapper.settings-panel {
     }
 }
 .checkbox .checkbox-inner input[type=checkbox]:checked+span{
-    
-    
     animation-name: checked-bg;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0,1.06,.39,1.71);
