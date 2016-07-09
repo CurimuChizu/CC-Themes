@@ -1,4 +1,4 @@
-//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.6v"}*//
+//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.5v"}*//
 
 /* 
 Hex color for everything: #9f0000
@@ -129,7 +129,7 @@ Hex color for texts: #D89191
     background: rgba(20, 23, 27, 0.95);
 }
 .chat>.content .messages .message-group:not(.has-divider) {
-    border-bottom-color: hsla(0, 0%, 100%, .04) !important;
+    border-bottom-color: hsla(0, 100%, 46%, 0.28) !important;
 }
 .chat>.content .messages .message-group .markup .highlight {
     color: #ddd !important;
@@ -336,6 +336,7 @@ a:link {
     transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
     padding-top: 100px;
     top: -56px;
+    border: 1px solid rgba(159, 0, 0, 0.3);
 }
 
 .guilds-add {
@@ -871,41 +872,43 @@ a:link {
 .user-popout .user-popout-options .btn:hover {
     border: 1px solid #9f0000;
 }
-.user-popout .header {
-    background: #9f0000;
-}
 .user-popout .body {
-    background: #b30000;
+    background: rgba(0,0,0,0.75);
 }
 .user-popout .body .label {
     color: #ffe6e6;
 }
 .user-popout .footer {
-    background: #ffffff;
-    border-top: 1px solid #ce174d !important;
+    background: rgba(0,0,0,0.75);
+    border-top: 1px solid #9f0000 !important;
     border-radius: 0 0 10px 10px !important;
 }
 .user-popout .footer .update-notice {
     color: rgba(255, 255, 255, 0) !important;
 }
-.user-popout .avatar-wrapper .avatar-popout {
-    background-color: #ffe6e6;
-    border: 4px solid #ff8080 !important;
-}
 .user-popout .header {
-    background: rgba(0, 0, 0, 0.86);
-}
-.user-popout .body {
-    background: rgba(21, 0, 0, 0.83);
+    background: #680000 url(https://i.imgur.com/LmIdYxO.jpg);
+    background-size: 124%;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: -232%;
 }
 .user-popout .avatar-wrapper .avatar-popout {
     background-color: transparent;
-    border: 4px solid rgb(243, 5, 5) !important;
+    border: 4px solid #701f1c !important;
 }
-.user-popout .footer {
-    background: rgba(138, 2, 2, 0.87);
-    border-top: 1px solid #E40303 !important;
-    border-radius: 0 0 10px 10px !important;
+.user-popout .avatar-wrapper .avatar-popout:before{
+    content: "";
+    width: 108px;
+    height: 108px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    border-radius: 10%;
+}
+.user-popout .username-wrapper{
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 .user-popout .footer .quick-message-wrapper .input {
     border: 1px solid #9f0000 !important;
@@ -920,10 +923,6 @@ a:link {
 }
 .user-popout .avatar-wrapper .avatar-hint {
     border-radius: 10% !important;
-}
-.user-popout .avatar-wrapper:hover .avatar-hint {
-    box-shadow: #ffe6e6;
-    visibility: #ffe6e6;
 }
 .user-popout .footer .update-notice .protip {
     color: #FFD1D1 !important; 
@@ -1393,6 +1392,11 @@ a:link {
 .channel-members .avatar-small .status {
     border-color: rgba(0, 0, 0, 0.7) !important;
 }
+.channel-members .avatar-small {
+    width: 35px !important;
+    height: 35px !important;
+    background-size: 35px 35px !important;
+}
 .bd-minimal .channel-members h2 {
     margin-top: 20px;
     margin-bottom: 3px;
@@ -1423,14 +1427,6 @@ a:link {
 .channel-members .member+h2 {
     margin-top: 10px;
 }
-.channel-members-wrap {
-    min-width: 240px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-}
 .theme-dark .channel-members .member.popout-open,
 .theme-dark .channel-members .member:hover {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 85%, rgba(46, 49, 54, 0)) !important;
@@ -1449,9 +1445,9 @@ a:link {
     transform: translateZ(0px);
 }
 .channel-members .member.member-status-online .avatar-small {
-    width: 40px;
-    height: 40px;
-    background-size: 40px 40px;
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
     border-radius: 10px;
 }
 .channel-members .member.member-status-offline .avatar-small {
@@ -1620,7 +1616,6 @@ scroller.settings-wrapper.settings-panel {
     background-image: url(https://i.imgur.com/W4Dob9k.png);
     background-size: 85%;
     background-repeat: no-repeat;
-    background-position: center;
     background-position-y: 480px;
     background-position-x: 18px;
 }
@@ -1692,8 +1687,8 @@ scroller.settings-wrapper.settings-panel {
     border: 1px solid #9f0000;
 }
 .user-settings-modal-games {
-    border-top: 1px solid #9f0000;
-    color: #E2E2E3;
+    border-top: 2px solid #9f0000;
+    color: #FFFFFF;
 }
 .user-settings-modal-games .games-table .games-row .item-game {
     border-bottom: 1px solid #9f0000;
@@ -1993,6 +1988,13 @@ scroller.settings-wrapper.settings-panel {
 .search-bar {
     box-shadow: inset 5px 0px 5px -6px rgba(0,0,0,0.5);
 }
+.private-channels header {
+    color: #9f0000;
+    opacity: 1;
+ }
+.private-channels .channel .channel-name {
+    opacity: 0.6;
+ }
  
 /* Pulses */
 .add-friend-popout header input:focus {
