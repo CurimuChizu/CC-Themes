@@ -23,6 +23,10 @@ Hex color for texts: #D89191
     background: url("https://i.imgur.com/NUhSyNd.jpg")!important;
     background-size: cover!important;
 }
+#pubs-container:before {
+	background: url("https://i.imgur.com/NUhSyNd.jpg")!important;
+    background-size: cover!important;
+}
 
 /* Main Chat */
 .chat .content {
@@ -244,7 +248,11 @@ a:link {
     background: #9f0000;
 }
 
-/* Pin it */
+/* Top Buttons */
+.header-toolbar button span {
+    background-color: #9f0000;
+    border-radius: 7px;
+}
 .theme-dark .chat .jump-to-present-bar {
     background-color: #9f0000;
 }
@@ -280,6 +288,24 @@ a:link {
 }
 .theme-dark .channel-pins-wrap .footer {
     background-color: rgba(72, 0, 0, 0.6);
+}
+.theme-dark .messages-popout-wrap {
+    background-color: rgba(159, 0, 0, 0.8);
+}
+.theme-dark .messages-popout-wrap .header {
+    background-color: rgba(0,0,0,0.65);
+}
+.theme-dark .messages-popout-wrap .messages-popout .message-group {
+    border-color: rgb(183, 0, 0);
+    background-color: #131313;
+}
+.theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button {
+    background-color: #9f0000;
+    color: hsla(0,0%,100%,.6);
+}
+.theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons {
+    box-shadow: 0 0 6px 4px rgba(54, 57, 62, 0);
+    background-color: rgba(132, 0, 0, 0);
 }
 
 /* Guilds */
@@ -1469,10 +1495,6 @@ a:link {
     background: rgba(0, 0, 0, 0.73);
     border: 1px solid #B30000;
     box-shadow: 0 1px 4px rgba(0,0,0,.1);
-}
-.header-toolbar button span {
-    background-color: #9f0000;
-    border-radius: 7px;
 }
 .theme-dark .channel-pins-wrap {
     background-color: rgba(0, 0, 0, 0.79);
