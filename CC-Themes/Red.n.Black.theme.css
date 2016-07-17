@@ -1,4 +1,4 @@
-//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.1v"}*//
+//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.5v"}*//
 
 /* 
 Hex color for everything: #9f0000
@@ -182,7 +182,6 @@ Hex color for texts: #D89191
 }
 .message-group .comment .markup pre {
     background: transparent;
-    border: none;
  }
 .message-group .comment .markup pre code {
     background: transparent;
