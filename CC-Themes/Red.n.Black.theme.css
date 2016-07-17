@@ -1,4 +1,4 @@
-//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.5v"}*//
+//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.1v"}*//
 
 /* 
 Hex color for everything: #9f0000
@@ -490,32 +490,6 @@ a:link {
 }
 .guilds-wrapper .guilds .guild .badge {
     background-color: #9f0000;
-}
-.links {
-    `display: none;
-    border-top: 1px solid #9f0000;
-}
-.links:after {
-    content: "CreamCheese";
-    color: #9f0000;
-    margin-left: 6px;
-    font-weight: bold;
-}
-.links li+li:before {
-    content: '\2022';
-    color: #9f0000;
-    margin-right: 6px;
-}
-.links li+li:after {
-    content: '\2022';
-    color: #9f0000;
-    margin-left: 6px;
-}
-.links li a {
-    color: #9f0000;
-}
-.links li a:hover {
-    color: #6f0000;
 }
 .tooltip {
     background-color: #9f0000;
@@ -1799,6 +1773,12 @@ scroller.settings-wrapper.settings-panel {
 .user-settings-security .btn-ghost {
     background: rgba(0, 0, 0, 0.65);
     border: 2px solid #9f0000;
+}
+.change-log-button-container .change-log-button {
+	display: none;
+}
+.change-log-button-container:before {
+    background-color: #9f0000;
 }
 
 /* Better Discord Settings */
