@@ -9,12 +9,12 @@ Hex color for texts: #D89191
 /* Backgrounds */
 
 .app {
-    background-image: url("https://i.imgur.com/q8NCGHH.jpg");
+    background-image: url("http://imgur.com/a/AJVoL");
     background-size: cover !important;
     background-position: center !important;
 }
 .callout-backdrop {
-    background: url("https://i.imgur.com/q8NCGHH.jpg");
+    background: url("http://imgur.com/a/AJVoL");
     background-size: cover !important;
     background-position: center !important;
     opacity:0.9 !important;
