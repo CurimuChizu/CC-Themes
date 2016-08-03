@@ -34,7 +34,7 @@ To change the background, just add the code below with a different link in the `
 <DIV ALIGN=CENTER><b><i>A theme based Re:Zero kara Hajimeru Isekai Seikatsu anime</i></b>
 <img src="http://i.imgur.com/rthaufN.jpg"/>
 <img src="http://i.imgur.com/QhU9gvh.jpg"/>
-<img src="http://i.imgur.com/ng5Kmpt.gif"/></div>
+<img src="https://a.pomf.cat/fawsxb.gif"/></div>
 
 Code for the background picture:
 ```css
