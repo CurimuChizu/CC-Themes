@@ -1,4 +1,4 @@
-//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.3"}*//
+//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.5"}*//
 
 /* 
 Hex color for everything: #afafff
@@ -193,6 +193,12 @@ a:link {
 }
 .bot-tag {
     background: #8282ff;
+}
+.theme-dark .chat .jump-to-present-bar {
+    background-color: rgba(173, 133, 239, 0.9);
+}
+.theme-dark .chat .jump-to-present-bar:hover {
+    background-color: rgba(150, 99, 234, 0.9);
 }
 
 /* Uploading */
@@ -794,7 +800,34 @@ a:link {
     border: 1px solid #afafff;
 }
 .user-popout .header {
-    background: #afafff;
+    background: #8888e4 url(https://a.pomf.cat/gqisqz.jpg);
+    background-size: 138%;
+    background-repeat: no-repeat;
+    background-position-y: 99%;
+    background-position-x: 61%;
+}
+.user-popout .username-wrapper.has-nickname .username {
+    color: #e9a4b5;
+}
+.user-popout .username-wrapper .activity {
+    color: #91bbfd;
+}
+.user-popout .avatar-wrapper .avatar-popout {
+    background-color: transparent;
+    border: 4px solid #701f1c !important;
+}
+.user-popout .avatar-wrapper .avatar-popout:before{
+    content: "";
+    width: 108px;
+    height: 108px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    border-radius: 10%;
+}
+.user-popout .username-wrapper{
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
 .user-popout .body .label {
     color: #ffe6e6;
@@ -802,18 +835,15 @@ a:link {
 .user-popout .footer .update-notice {
     color: rgba(255, 255, 255, 0) !important;
 }
-.user-popout .header {
-    background: rgba(0, 0, 0, 0.86);
-}
 .user-popout .body {
-    background: rgba(114, 113, 187, 0.84);
+    background: rgba(0,0,0,0.6);
 }
 .user-popout .avatar-wrapper .avatar-popout {
     background-color: transparent;
     border: 4px solid #8282ff !important;
 }
 .user-popout .footer {
-    background: rgba(124, 111, 228, 0.87);
+    background: rgba(0,0,0,0.6);
     border-top: 1px solid #afafff!important;
     border-radius: 0 0 10px 10px !important;
 }
@@ -890,7 +920,6 @@ a:link {
     background-color: #8282ff !important;
 }
 
-
 /* Connecting */
 #connecting {
     background: rgba( 0, 0, 0,.80);
@@ -920,7 +949,6 @@ a:link {
     margin-bottom: -122px;
     font-size: 30px;
 }
-
 
 /* Server Settings */
 #autocomplete-popout .row.selected, 
@@ -1379,11 +1407,14 @@ a:link {
 /* Main Settings */
 .settings .settings-header, 
 .settings .settings-inner, 
-.scroller.settings-wrapper.settings-panel, 
 .bd-customcss-innerpane, 
 .voice-settings, 
 .radio-inner {
-    background: rgba(93, 86, 154, 0.6) !important;
+    background: rgba(93, 86, 154, 0.6);
+}
+.settings .settings-inner,
+.scroller.settings-wrapper.settings-panel {
+    background: rgba(116, 105, 195, 0.58);
 }
 .Select-value {
     background: rgba(101, 99, 183, 0.84);
@@ -1416,13 +1447,13 @@ a:link {
 }
 .now-playing {
     background: rgba(185, 173, 255, 0.3);
-    padding: 5px 0;
+    padding: 9px 0;
     width: 555px;
 }
 .now-playing.no-detection {
-    padding: 14px 0;
-    background: rgba(101, 0, 0, 0.45);
-    border: 1px solid #A90000;
+    padding: 9px 0;
+    background: rgba(185, 173, 255, 0.3);
+    border: 1px solid #afafff;
 }
 .now-playing-add .link {
     color: #8282ff;
@@ -1461,9 +1492,11 @@ a:link {
     border-bottom: 2px solid #afafff;
 }
 .avatar-uploader .avatar-uploader-inner {
+    content: "";
     background-color: #afafff;
     border: 5px solid #afafff;
     border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 .user-settings-modal-connections .user-settings-modal-accounts-list .connect-container .btn {
     background: rgba(173, 153, 255, 0.51);
@@ -1591,10 +1624,40 @@ a:link {
     border: 2px solid #afafff;
     color: #fff;
 }
+.user-settings-locale p {
+    color: #ffffff;
+}
 .user-settings-security .btn-ghost:hover {
     background: #8282ff;
     border: 2px solid #afafff;
     color: #fff;
+}
+.user-settings-locale .select-item .primary {
+    font-size: 15px;
+    color: #ffffff!important;
+}
+.change-log-button-container .change-log-button {
+    display: none;
+}
+.settings-connections-wrapper .authed-app .header .header-actions .action-btn {
+    background: #afafff;
+}
+.settings-connections-wrapper .authed-app .header .header-actions .action-btn:hover {
+    background: #8282ff;
+}
+.settings-connections-wrapper .authed-app {
+    background: rgba(155, 140, 236, 0.44);
+    border: 1px solid #afafff;
+}
+.settings-connections-wrapper .authed-app .details .header {
+    color: #fff;
+}
+.settings-connections-wrapper .authed-app .details .body,
+.settings-connections-wrapper .authed-app .details .permissions .body {
+    color: #cbceff;
+}
+.settings-connections-wrapper .authed-app .header .app-name {
+    color: #dad7fd;
 }
 
 /* Better Discord Settings */
@@ -2013,7 +2076,7 @@ search-bar-clear {
     color: #afafff;
 }
 .tab-bar.TOP .tab-bar-item {
-    color: #8282ff;
+    color: #afafff;
 }
 .tab-bar.TOP {
     border-bottom: 1px solid #afafff;
