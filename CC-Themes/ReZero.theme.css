@@ -1,4 +1,4 @@
-//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.5"}*//
+//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.3"}*//
 
 /* 
 Hex color for everything: #afafff
@@ -33,8 +33,8 @@ Hex color for texts: #e6e6fa
 .message-group .comment .markup {
     color: #FFF;
 }
-.theme-dark .messages-wrapper {
-    box-shadow: inset 10px 0px 5px -6px rgb(76,65,109);
+.chat .content {
+    box-shadow: inset 10px 0px 5px -6px rgb(121, 110, 154);
 }
 .chat .divider>span {
     color: #F1F1F1;
@@ -250,7 +250,7 @@ a:link {
 
 /* Guilds */
 .guilds-wrapper {
-    box-shadow: inset -10px 0px 5px -6px rgb(76,65,109);
+    box-shadow: inset -10px 0px 5px -6px rgb(65, 53, 101);
     background: rgba(50, 42, 88, 0.64)!important;
 }
 .links, 
@@ -333,48 +333,89 @@ a:link {
 
 /* Left Side Settings */
 .account {
-    border-top: 1px solid #afafff!important;
-}
-.account .btn-group {
-    border: 1px solid #afafff!important;
-    border-radius: 20px;
-    background: rgb(108, 94, 174);
-}
-.account .btn-deafen:hover:after, 
-.account .btn-mute:hover:after, 
-.account .btn-settings:hover:after {
-    background-color: #8282ff;
-    border-radius: 20px;
-}
-.account .btn-deafen {
-    border-right: 1px solid #afafff;
-    border-left: 1px solid #afafff;
-}
-.account {
+    border-top: 3px solid #afafff!important;
     background: rgba(0, 0, 0, 0);
 }
-.account .status {
-    border: 2px solid rgba(0, 0, 0, 1);
+.account .btn-group {
+    border: none;
+    border-radius: 20px;
 }
 .account .btn-deafen, 
 .account .btn-mute, 
 .account .btn-settings {
-    background: #afafff;
-    box-shadow: none !important;
+    background: none;
     border-radius: 20px;
-    border-right: 1px solid rgba(216, 203, 255, 0.36);
+    box-shadow: none;
 }
+.account .btn-deafen:hover:after, 
+.account .btn-mute:hover:after, 
+.account .btn-settings:hover:after {
+    background-color: #afafff;
+    border-radius: 20px;
+}
+.account .btn:active {
+    background: rgb(70, 23, 23);
+}
+.account .btn-deafen,
+.account .btn-mute {
+    border-right: none;
+}
+.account .btn-deafen, 
 .account .btn-settings {
-    border-left: #afafff;
+    border-left: none;
 }
-.account .btn-settings:after {
+.account .btn-deafen:hover:after {
+    background-image: url(https://i.imgur.com/Crxj2nR.png);
+}
+.account .btn-deafen:after {
+    background-image: url(https://a.pomf.cat/fivzom.png);
+    opacity: 0.8;
+    background-size: 75%;
+}
+.account .btn-deafen:hover:after {
+    background-image: url(https://i.imgur.com/Crxj2nR.png);
     opacity: 1;
 }
-.account {
-    background: rgba(0, 0, 0, 0);
+.account .btn-deafen.disabled:after {
+    background-image: url(https://a.pomf.cat/iqojmb.png);
+}
+.account .btn-deafen.disabled:hover:after {
+    background-image: url(https://a.pomf.cat/iqojmb.png);
+}
+.account .btn-settings:after {
+    background-image: url(https://a.pomf.cat/acuxuj.png);
+    opacity: .8;
+    background-size: 80%;
+}
+.account .btn-settings:hover:after {
+    background-image: url(https://i.imgur.com/tmJnYHc.png);
+}
+.account .btn-mute:after {
+    background-image: url(https://a.pomf.cat/qihfkm.png);
+    opacity: .8;
+    background-size: 80%;
+}
+.account .btn-mute:hover:after {
+    background-image: url(https://i.imgur.com/k9gSksn.png);
+}
+.account .btn-mute.disabled:after {
+    background-image: url(https://a.pomf.cat/ilbkid.png);
+}
+.account .btn-mute.disabled:hover:after {
+    background-image: url(https://i.imgur.com/iOsaRAQ.png);
 }
 .account .status {
     border: 2px solid rgba(0, 0, 0, 1);
+}
+.guild-channels .channel-voice-states li .icon-muted {
+    background-image: url(https://a.pomf.cat/ilbkid.png);
+    background-size: 120%;
+    opacity: 0.7 !important;
+}
+.guild-channels .channel-voice-states li .icon-deafened {
+    background-image: url(https://a.pomf.cat/iqojmb.png);
+    background-size: 120%;
+    opacity: 0.7 !important;
 }
 .btn-settings:hover:after {
     -webkit-transform: translateZ(0);
@@ -650,7 +691,7 @@ a:link {
 /* Emoji */
 .channel-textarea-emoji>.sprite-item,
 .channel-textarea-emoji.popout-open .sprite-item {
-  background-image:url(https://a.pomf.cat/fhgqcu.png)!important;
+  background-image:url(https://a.pomf.cat/iyqmjn.png)!important;
 }
 .emoji-picker .categories .item.selected {
     border-bottom-color: #9C0505;
@@ -1351,6 +1392,14 @@ a:link {
     background-color: #afafff;
     border-radius: 7px;
 }
+.header-toolbar button {
+    background-color: rgba(177, 177, 255, 0.73);
+}
+.theme-dark .header-toolbar button.active {
+    background-color: rgba(177, 177, 255, 0.73);
+    border-bottom: 2px solid #e6e6fa;
+    border-radius: 7px;
+}
 .bot-tag.bot-tag-invert {
     background: #afafff;
     color: #FFFFFF!important;
@@ -1638,6 +1687,9 @@ a:link {
 }
 .change-log-button-container .change-log-button {
     display: none;
+}
+.change-log-button-container:before {
+    background-color: hsl(240, 100%, 84%);
 }
 .settings-connections-wrapper .authed-app .header .header-actions .action-btn {
     background: #afafff;
