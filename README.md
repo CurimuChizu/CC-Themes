@@ -16,13 +16,11 @@
 
 To change the background, just add the code below with a different link in the `Custome CSS` tab of the `BetterDiscord` settings:( Also be sure to add the `s` after `http` when you change the pic or it won't appear )
 ```css
-/*First Background*/
 .app {
     background-image: url("https://i.imgur.com/P0k3VRY.jpg") !important;
     background-size: 1500px 900px !important;
     background-repeat: no-repeat !important;
 }
-/*Second Background*/
 .callout-backdrop {
     opacity:0.9 !important;
     background: url(https://i.imgur.com/CcntY8Y.jpg) !important;
@@ -38,12 +36,10 @@ To change the background, just add the code below with a different link in the `
 
 Code for the background picture:
 ```css
-/*First Background*/
 .app {
     background-image: url("https://i.imgur.com/jCO8sAy.png") !important;
     background-size: cover !important;
 }
-/*Second Background*/
 .callout-backdrop {
     opacity:0.9!important;
     background: url("https://i.imgur.com/eeDIMtw.jpg")!important;
