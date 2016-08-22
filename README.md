@@ -9,7 +9,7 @@
 + Step 6: Open Discord Settings>BetterDiscord>Themes>Enable the theme
 
 ##<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC%20Themes/Red%20n%20Black.theme.css">Red n Black</a></div>
-<DIV ALIGN=CENTER><b><i>A theme based red and black with a hint of anime</i></b>
+<DIV ALIGN=CENTER><b><i>A theme based red and black with a hint of anime (Up to date as of 8/22)</i></b>
 <img src="http://i.imgur.com/TdJImXS.png"/>
 <img src="http://i.imgur.com/n669pit.jpg"/>
 <img src="http://i.imgur.com/w1p4aNN.gif"/></div>
