@@ -23,7 +23,7 @@ To change the background, just add the code below with a different link in the `
 }
 .callout-backdrop {
     opacity:0.9 !important;
-    background: url(https://i.imgur.com/CcntY8Y.jpg) !important;
+    background: url("https://i.imgur.com/CcntY8Y.jpg") !important;
     background-size: 1500px 900px !important;
     background-repeat: no-repeat !important;
 }
