@@ -1,4 +1,4 @@
-//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.3"}*//
+//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.5"}*//
 
 /* 
 Hex color for everything: #afafff
@@ -48,6 +48,13 @@ Hex color for texts: #e6e6fa
 }
 .theme-dark .chat .welcome-message a {
     color: #afafff;
+}
+.message-group .mentioned .message-text:after {
+    border-left: 4px solid #afafff;
+    background: rgba(182, 155, 241, 0.36);
+}
+.theme-dark .message-group .mentioned .message-text {
+    background: rgba(137, 100, 236, 0.1);
 }
 .chat .new-messages-bar button {
     background: #afafff;
@@ -144,17 +151,15 @@ Hex color for texts: #e6e6fa
 }
 .chat>.content .messages .message-group .markup pre {
     background: transparent !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(185, 149, 245, 0.81) !important;
 }
 .chat>.content .messages .message-group .markup pre code.hljs {
-    background: rgba(0, 0, 0, 0.42) !important;
-    color: rgba(255, 255, 255, 0.7) !important;
-    padding: 1em !important;
+    background: rgba(182, 155, 241, 0.36) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 .chat>.content .messages .message-group .markup code.inline {
-    background: rgba(255, 255, 255, 0.1) !important;
-    color: rgba(255, 255, 255, 0.7) !important;
-    padding: 0.3em 0.6em;
+    background: rgba(182, 155, 241, 0.36) !important;
+    color: rgba(255, 255, 255, 0.84) !important;
 }
 ::-webkit-input-placeholder {
   color: #afafff!important;
@@ -199,6 +204,29 @@ a:link {
 }
 .theme-dark .chat .jump-to-present-bar:hover {
     background-color: rgba(150, 99, 234, 0.9);
+}
+
+/* Pinning/Mentions */
+.theme-dark .themed-popout {
+    background-color: rgba(94, 73, 158, 0.9);
+    border: 1px solid rgba(94, 73, 158, 0.9);
+    box-shadow: 0 0 1px #8282ff,0 1px 4px #afafff;
+}
+.theme-dark .themed-popout .header {
+    background-color: rgba(148, 134, 226, 0.9);
+    box-shadow: 0 2px 3px 0 rgba(94, 73, 158, 0.9);
+}
+.theme-dark .messages-popout-wrap .messages-popout .message-group {
+    border-color: #afafff;
+    background-color: rgba(134, 119, 212, 0.64);
+}
+.theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons {
+    box-shadow: none;
+    background-color: transparent;
+}
+.theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button {
+    background-color: #afafff;
+    color: rgba(94, 73, 158, 0.9);
 }
 
 /* Uploading */
@@ -853,6 +881,12 @@ a:link {
 .user-popout .username-wrapper .activity {
     color: #91bbfd;
 }
+.user-popout .username-wrapper .username {
+    font-size: 16px;
+    line-height: 19px;
+    color: #020000;
+    text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.63);
+}
 .user-popout .avatar-wrapper .avatar-popout {
     background-color: transparent;
     border: 4px solid #701f1c !important;
@@ -1323,19 +1357,19 @@ a:link {
     padding: 5px 15px 8px 20px;
 }
 .channel-members h2 {
-    color: #afafff!important;
+    color: #afafff !important;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: .08em;
-    font-weight: 600;
-    padding: 4px 58px;
-    background-color: rgba(0, 0, 0, 0.24);
-    border: 1px solid;
-    border-color: transparent;
+    font-weight: 500;
+    padding: 1px 20px;
+    background-color: rgba(0, 0, 0, 0.44);
+    border-color: rgb(130, 0, 0);
     border-radius: 3px;
-    width: 90px;
-    margin-left: 15px;
-    text-align: center
+    margin-left: 35px;
+    text-align: center;
+    border-bottom: 2px solid;
+    margin-right: 20px;
 }
 .channel-members-wrap {
     min-width: 240px;
@@ -1394,6 +1428,9 @@ a:link {
 }
 .header-toolbar button {
     background-color: rgba(177, 177, 255, 0.73);
+}
+.header-toolbar .toolbar-badge {
+    background-color: #8282ff;
 }
 .theme-dark .header-toolbar button.active {
     background-color: rgba(177, 177, 255, 0.73);
@@ -1952,12 +1989,12 @@ search-bar-clear {
 }
 
 @-webkit-keyframes mentioned-pulse {
-    0% {box-shadow: 0 0 0 0 #fab81a;}
+    0% {box-shadow: 0 0 0 0 #afafff;}
     70% {box-shadow: 0 0 10px 10px rgba(241, 71, 71, 0);}
     to {box-shadow: 0 0 0 0 rgba(241, 71, 71, 0);}
 }
 @keyframes mentioned-pulse {
-    0% {box-shadow: 0 0 0 0 #fab81a;}
+    0% {box-shadow: 0 0 0 0 #afafff;}
     70% {box-shadow: 0 0 10px 10px rgba(241, 71, 71, 0);}
     to {box-shadow: 0 0 0 0 rgba(241, 71, 71, 0);}
 }
