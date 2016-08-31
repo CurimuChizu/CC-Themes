@@ -1,4 +1,4 @@
-//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.5"}*//
+//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.6"}*//
 
 /* 
 Hex color for everything: #afafff
@@ -881,9 +881,7 @@ a:link {
 .user-popout .username-wrapper .activity {
     color: #91bbfd;
 }
-.user-popout .username-wrapper .username {
-    font-size: 16px;
-    line-height: 19px;
+.user-popout .username-wrapper .discord-tag, .user-popout .username-wrapper .nickname, .user-popout .username-wrapper .username {
     color: #fff;
     text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.63);
 }
@@ -1301,7 +1299,7 @@ a:link {
 .guilds-wrapper .guilds .friends-icon {
     width: 50px;
     height: 50px;
-    background-image: url(https://i.imgur.com/wsTohzD.jpg);
+    background-image: url(https://a.pomf.cat/svhxxi.png);
     background-size: 62px 62px;
     background-position: 50%;
     background-repeat: no-repeat;
