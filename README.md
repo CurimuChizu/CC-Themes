@@ -37,15 +37,11 @@ To change the background, just add the code below with a different link in the `
 Code for the background picture:
 ```css
 .app {
-    background-image: url("https://images4.alphacoders.com/706/706365.png") !important; 
-    /* Copy this whole code only if you want a Rem & Ram BG*/
-    background-size: cover !important;
-}
-.app {
     background-image: url("https://i.imgur.com/w7UVsOs.jpg") !important; 
-    /* Copy this whole code only if you want an Emelia BG*/
     background-size: cover !important;
 }
+/* Just change the link to whatever picture of Emelia, Rem, or Ram including the `s` in `http` */
+
 .callout-backdrop {
     opacity:0.9!important;
     background: url("https://i.imgur.com/eeDIMtw.jpg")!important;
