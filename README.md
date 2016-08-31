@@ -21,6 +21,8 @@ To change the background, just add the code below with a different link in the `
     background-size: 1500px 900px !important;
     background-repeat: no-repeat !important;
 }
+/* Just change the link to whatever picture, including the `s` in `https` */
+
 .callout-backdrop {
     opacity:0.9 !important;
     background: url("https://i.imgur.com/CcntY8Y.jpg") !important;
@@ -40,7 +42,7 @@ Code for the background picture:
     background-image: url("https://i.imgur.com/w7UVsOs.jpg") !important; 
     background-size: cover !important;
 }
-/* Just change the link to whatever picture of Emelia, Rem, or Ram including the `s` in `http` */
+/* Just change the link to whatever picture of Emelia, Rem, or Ram including the `s` in `https` */
 
 .callout-backdrop {
     opacity:0.9!important;
