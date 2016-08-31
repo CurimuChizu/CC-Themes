@@ -37,11 +37,13 @@ To change the background, just add the code below with a different link in the `
 Code for the background picture:
 ```css
 .app {
-    background-image: url("https://images4.alphacoders.com/706/706365.png") !important; /*Rem & Ram BG*/
+    background-image: url("https://images4.alphacoders.com/706/706365.png") !important; 
+    /* Copy this whole code only if you want a Rem & Ram BG*/
     background-size: cover !important;
 }
 .app {
-    background-image: url("https://i.imgur.com/w7UVsOs.jpg") !important; /*Emelia BG*/
+    background-image: url("https://i.imgur.com/w7UVsOs.jpg") !important; 
+    /* Copy this whole code only if you want an Emelia BG*/
     background-size: cover !important;
 }
 .callout-backdrop {
