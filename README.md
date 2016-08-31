@@ -4,7 +4,7 @@
 + Step 1: Right click the raw button
 + Step 2: Click save link as 
 + Step 3: Windows-> Save to %appdata%\betterdiscord\themes\ 
-+ Step 3: Macs-> Save to ~/Library/Preferences/themes 
++ Step 3: IOS-> Save to ~/Library/Preferences/themes 
 + Step 4: Make sure the extension is set as `.theme.css`
 + Step 5: Restart Discord (CMD+R or CTRL+R)
 + Step 6: Open Discord Settings>BetterDiscord>Themes>Enable the theme
