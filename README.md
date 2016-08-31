@@ -1,7 +1,8 @@
 #<DIV ALIGN=CENTER>CC-Themes<div>
 <font size="25"><b>To download the theme:</b></font>
-+ Step 1: Right Click the Raw Button
-+ Step 2: Click Save Link As 
++ Step 0: Click on the name of the desired theme
++ Step 1: Right click the raw button
++ Step 2: Click save link as 
 + Step 3: Windows-> Save to %appdata%\betterdiscord\themes\ 
 + Step 3: Macs-> Save to ~/Library/Preferences/themes 
 + Step 4: Make sure the extension is set as `.theme.css`
