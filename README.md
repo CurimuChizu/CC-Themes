@@ -8,7 +8,7 @@
 + Step 5: Restart Discord (CMD+R or CTRL+R)
 + Step 6: Open Discord Settings>BetterDiscord>Themes>Enable the theme
 
-##<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC%20Themes/Red%20n%20Black.theme.css">Red n Black</a></div>
+##<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/Red.n.Black.theme.css">Red n Black</a></div>
 <DIV ALIGN=CENTER><b><i>A theme based red and black with a hint of anime (Up to date as of 8/22)</i></b>
 <img src="http://i.imgur.com/TdJImXS.png"/>
 <img src="http://i.imgur.com/n669pit.jpg"/>
@@ -30,7 +30,7 @@ To change the background, just add the code below with a different link in the `
     background-repeat: no-repeat !important;
 }
 ```
-##<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC%20Themes/ReZero.theme.css">ReZero The Anime</a></div>
+##<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/ReZero.theme.css">ReZero The Anime</a></div>
 <DIV ALIGN=CENTER><b><i>A theme based Re:Zero kara Hajimeru Isekai Seikatsu anime</i></b>
 <img src="http://i.imgur.com/rthaufN.jpg"/>
 <img src="http://i.imgur.com/QhU9gvh.jpg"/>
