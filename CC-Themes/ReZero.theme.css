@@ -1,4 +1,4 @@
-//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.6"}*//
+//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.3"}*//
 
 /* 
 Hex color for everything: #afafff
@@ -920,7 +920,7 @@ a:link {
     border-top: 1px solid #afafff!important;
     border-radius: 0 0 10px 10px !important;
 }
-.user-popout .footer .quick-message-wrapper .input {
+.quick-message {
     border: 1px solid #afafff!important;
     background: rgba(8, 3, 3, 0.64) !important;
     color: #fff;
