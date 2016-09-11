@@ -1,4 +1,4 @@
-//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.5v"}*//
+//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.0v"}*//
 
 /* 
 Hex color for everything: #9f0000
@@ -179,7 +179,7 @@ Hex color for texts: #D89191
     background: rgba(0, 0, 0, 0.62);
 }
 .theme-dark .messages-wrapper .messages .message-group .comment .markup code.inline {
-    background: rgba(159, 0, 0, 0.58) !important;
+    background: rgba(90, 0, 0, 0.58) !important;
     color: rgba(255, 255, 255, 0.7) !important;
 }
 .message-group .comment .markup code.inline {
@@ -364,8 +364,6 @@ a:link {
 .guild-header ul {
     background: rgba(0, 0, 0, 0.89) !important;
     transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
-    padding-top: 100px;
-    top: -56px;
     border: 1px solid rgba(159, 0, 0, 0.3);
 }
 
@@ -733,6 +731,10 @@ a:link {
     background: #65676b;
     animation: reject-friend-pulse 1.5s infinite;
 }
+.note textarea:focus {
+    background: #D89191;
+    border-radius: 8px;
+}
 
 /* Emoji/Emotes */
 .channel-textarea-emoji>.sprite-item,
@@ -975,7 +977,7 @@ a:link {
     background-color: transparent;
 }
 .context-menu .item.danger:hover {
-    color: #9f0000 !important;
+    color: #000 !important;
     background-color: #6f0000 !important;
 }
 .theme-dark.context-menu {
@@ -1214,10 +1216,6 @@ a:link {
     border: 1px solid #9f0000;
     color: #DEDEDE;
 }
-.guild-header ul li:hover a {
-    background-color: #6f0000;
-    border-radius: 3px;
-}
 #settings-roles-pro-tip .pro-tip {
     color: #BF6363;
 }
@@ -1372,6 +1370,50 @@ a:link {
 }
 #settings-roles .control-group:hover .disabled-for-everyone {
     color: #D89191;
+}
+.channel-notices .channel-notice.invite {
+    background: url(/assets/bf625d222187f542b9d7179109422e2c.svg) center 20px no-repeat;
+}
+.channel-notices .channel-notice {
+    position: relative;
+    text-align: center;
+    padding: 71px 55px 0px;
+    -webkit-box-shadow: inset 0 -1px 3px rgba(0,0,0,.1);
+    box-shadow: inset 0 -1px 3px rgb(119, 0, 0);
+}
+.channel-notices .channel-notice .message .btn {
+    margin-top: 10px;
+    color: #fff;
+    background-color: #9f0000;
+}
+.channel-notices .channel-notice .message .btn:hover {
+    background-color: #6f0000;
+}
+.channel-notices .channel-notice .message {
+    color: #fff;
+}
+.guild-header ul.treatment-1 li:hover {
+    background-color: #6f0000;
+}
+.guild-header ul.treatment-1 li:hover.invite a {
+    color: #fff;
+}
+.guild-header ul.treatment-1 li.invite a {
+    color: #9f0000;
+}
+.guild-header ul.treatment-1 .icon.icon-instant-invite {
+    background-image: url(https://a.pomf.cat/zbdwga.png);
+    background-size: 100%;
+}
+.guild-header ul.treatment-1 .line {
+    border-bottom: 1px solid #9f0000;
+}
+.guild-header ul.treatment-1 li:hover a {
+    color: #ffffff;
+}
+.guild-header ul.treatment-1 {
+    margin-left: 246px !important;
+    margin-top: -50px;
 }
 
 /* Right Side */
@@ -1590,9 +1632,12 @@ a:link {
 /* Settings */
 .settings .settings-header, 
 .bd-customcss-innerpane, 
-.voice-settings, 
-.radio-inner {
+.voice-settings {
     background: rgba(0,0,0,0.7);
+}
+.radio .radio-inner {
+    border: 1px solid #9f0000;
+    background: rgba(0,0,0,0.7) !important
 }
 .settings .settings-header {
 	background: rgba(0,0,0,0.6) !important;
@@ -1604,7 +1649,7 @@ scroller.settings-wrapper.settings-panel {
     background: rgba(0,0,0,0.6) !important;
 }
 .Select-value {
-    background: rgb(0,0,0) !important;
+    background: rgba(0, 0, 0) !important;
 }
 .settings .settings-actions {
     border-top: 1px solid #9f0000 !important;
@@ -1827,12 +1872,12 @@ scroller.settings-wrapper.settings-panel {
 
 /* Better Discord Settings */
 .bd-settings > div:last-child {
-    background: rgba(0, 0, 0, 0.83) !important;
+    background: rgba(0, 0, 0, 0) !important;
     color: #6f0000 !important;
     height: 30px !important;
     position: absolute !important;
-    bottom: 0 !important;
-    left: 0 !important;
+    bottom: 0px !important;
+    left: 0px !important;
     right: 0 !important;
 }
 #bd-customcss-detach-container {
@@ -1920,6 +1965,9 @@ scroller.settings-wrapper.settings-panel {
 .tab-bar.TOP .tab-bar-item:hover {
     border-bottom: 2px solid #9f0000;
 }
+.user-settings-modal button.preview-sound:before {
+    background-image: url(https://a.pomf.cat/esnmbl.png);
+}
 
 /* Friends */
 #friends {
@@ -1980,8 +2028,8 @@ scroller.settings-wrapper.settings-panel {
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-red {
     background-color: #9f0000;
 }
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-red:hover {
-    background-color: #6f0000;
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add:hover {
+    background-color: #6f0000!important;
 }
 .guilds-wrapper .guilds .friends-online {
     font-size: 10px;
@@ -2003,6 +2051,10 @@ scroller.settings-wrapper.settings-panel {
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected,
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
     background-color: #9f0000;
+    color: #fff;
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected .badge {
+    background-color: #6f0000;
     color: #fff;
 }
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
@@ -2278,10 +2330,11 @@ scroller.settings-wrapper.settings-panel {
     border: 1px solid #9f0000;
 }
 .theme-dark .chat>.content .messages .message-group a {
-    color: #9f0000;
+    color: #f00;
 }
 .theme-dark .chat>.content .messages .message-group a:hover {
-    color: #E21E1E;
+    color: #f00;
+
 }
 .need-help-modal .header {
     background-color: #9f0000;
@@ -2418,7 +2471,7 @@ scroller.settings-wrapper.settings-panel {
     border: 1px solid #9f0000;
 }
 .member-roles .member-role .member-role-remove {
-    background: url(http://i.imgur.com/aACperk.png) 50% no-repeat;
+    background: url(https://i.imgur.com/aACperk.png) 50% no-repeat;
     width: 8px;
     height: 12px;
     background-size: 8px;
@@ -2441,6 +2494,10 @@ scroller.settings-wrapper.settings-panel {
 }
 .context-menu .item:hover {
     background: #6f0000;
+    color: #fff;
+}
+.context-menu .item {
+    color: #fff;
 }
 .message-group .image {
     -webkit-filter: none;
