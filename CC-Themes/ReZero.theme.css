@@ -205,6 +205,12 @@ a:link {
 .theme-dark .chat .jump-to-present-bar:hover {
     background-color: rgba(150, 99, 234, 0.9);
 }
+.theme-dark .friends-table .messages .divider span, 
+.theme-dark .friends-table .messages .divider:before, 
+.theme-dark .messages-wrapper .messages .divider span, 
+.theme-dark .messages-wrapper .messages .divider:before {
+    background-color: transparent;
+}
 
 /* Pinning/Mentions */
 .theme-dark .themed-popout {
@@ -326,8 +332,6 @@ a:link {
 .guild-header ul {
     background: rgba(102, 93, 154, 0.95) !important;
     transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
-    padding-top: 100px;
-    top: -56px;
     box-shadow: inset 0px -8px 5px -6px rgba(133, 129, 191, 0.5);
 }
 .guild-header header span {
@@ -672,8 +676,15 @@ a:link {
     background-color: #8282ff;
 }
 #user-profile-modal .header {
-    background-color: rgba(0, 0, 0, 0.78);
+    background-color: rgba(30, 26, 41, 0.78);
     background-image: none;
+}
+#user-profile-modal .tab-bar-container {
+    background-color: rgba(30, 26, 41, 0.78);
+    border-bottom: none;
+}
+#user-profile-modal .guilds .section .section-header {
+    color: #e6e6fa;
 }
 #user-profile-modal .sub-header {
     background: rgba(0, 0, 0, 0.78);
@@ -694,8 +705,7 @@ a:link {
     line-height: 30px;
 }
 #user-profile-modal .tab-bar {
-    background: rgba(30, 26, 41, 0.78);
-    border-bottom: 1px solid #afafff;
+    border-bottom: none;
 }
 #user-profile-modal .empty {
     background: rgba(175, 175, 255, 0.75);
@@ -713,6 +723,10 @@ a:link {
 }
 #user-profile-modal footer .btn.disabled:hover {
     background: #8282ff !important;
+}
+.note textarea:focus {
+    background: #e6e6fa;
+    border-radius: 8px;
 }
 
 
@@ -1136,7 +1150,6 @@ a:link {
     color: #DEDEDE;
 }
 .guild-header ul li:hover a {
-    background-color: #afafff;
     border-radius: 3px;
 }
 #settings-roles-pro-tip .pro-tip {
@@ -1289,6 +1302,33 @@ a:link {
 }
 #settings-roles .control-group:hover .disabled-for-everyone {
     color: #e6e6fa;
+}
+.guild-header ul.treatment-1 li:hover {
+    background-color: #8282ff;
+}
+.guild-header ul.treatment-1 li:hover.invite a {
+    color: #fff;
+}
+.guild-header ul.treatment-1 li.invite a,
+.guild-header ul.treatment-1 li.leave a {
+    color: #afafff;
+}
+.guild-header ul.treatment-1 .icon.icon-instant-invite {
+    background-image: url(https://a.pomf.cat/blqqea.png);
+    background-size: 100%;
+}
+.guild-header ul.treatment-1 .line {
+    border-bottom: 1px solid #afafff;
+}
+.guild-header ul.treatment-1 li:hover a {
+    color: #ffffff;
+}
+.guild-header ul.treatment-1 {
+    margin-left: 246px !important;
+    margin-top: -50px;
+}
+.guild-header ul a.red-highlight {
+    color: #FFFFFF;
 }
 
 
@@ -2148,9 +2188,6 @@ search-bar-clear {
 }
 .channel-notification-settings .content .content-inner {
     background: transparent !important;
-}
-.guild-header ul a.red-highlight {
-    color: #FFFFFF;
 }
 .form header {
     color: #afafff;
