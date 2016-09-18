@@ -1589,6 +1589,11 @@ a:link {
 }
 .tab-bar.SIDE {
     background: rgba(154, 133, 239, 0.6);
+    background-image: url(https://a.pomf.cat/idzgce.png) !important;
+    background-size: 120%!important;
+    background-repeat: no-repeat!important;
+    background-position-y: 480px!important;
+    background-position-x: -60px!important;
 }
 .tab-bar.SIDE .tab-bar-item:before {
     border-left: 4px solid #afafff;
@@ -1955,6 +1960,12 @@ a:link {
 }
 .theme-dark #friends .friends-table .friends-table-header .friends-column:after {
     color: hsla(0, 0%, 100%, .3);
+}
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
+    background-color: #8282ff;
+}
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
+    background-color: #afafff;
 }
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) {
     background: rgba(0, 0, 0, 0.29);
