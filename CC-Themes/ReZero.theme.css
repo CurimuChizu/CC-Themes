@@ -1,4 +1,4 @@
-//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.3"}*//
+//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.0"}*//
 
 /* 
 Hex color for everything: #afafff
@@ -359,6 +359,9 @@ a:link {
 .guilds-wrapper .guilds .guild.unread:before {
     background: #afafff;
 }
+.guilds-wrapper .guilds .guild.audio .guild-inner:after {
+    background-color: #afafff;
+}
 .guilds-wrapper .guild-separator:after {
     background: #afafff;
 }
@@ -504,12 +507,12 @@ a:link {
     border-top-color: #afafff;
 }
 #voice-connection .btn-group {
-    border: 1px solid #AFAFFF;
+    border: transparent;
     border-radius: 20px;
-    background: rgb(108, 94, 174);
+    background: transparent;
 }
 #voice-connection .btn {
-    background: #afafff;
+    background: transparent;
     box-shadow: none;
     border-radius: 20px;
 }
@@ -518,7 +521,7 @@ a:link {
     padding: 15px 20px 15px 18px !important;
 }
 #voice-connection .btn-info {
-    border-right: 1px solid rgba(228, 203, 255, 0.29);
+    border-right: none;
 }
 #voice-connection .btn-disconnect:hover:after,
 #voice-connection .btn-info:hover:after {
@@ -527,6 +530,24 @@ a:link {
 }
 #voice-connection .btn-info:after,
 #voice-connection .btn-disconnect:after {
+    opacity: 1;
+}
+#voice-connection .btn-info:after {
+    background-image: url(https://a.pomf.cat/hwtfeh.png);
+    opacity: 1;
+    background-size: 80%;
+}
+#voice-connection .btn-disconnect:after {
+    background-image: url(https://a.pomf.cat/dfngik.png);
+    opacity: 1;
+    background-size: 80%;
+}
+#voice-connection .btn-info:hover:after {
+    background-image: url(https://i.imgur.com/7PlilIx.png);
+    opacity: 1;
+}
+#voice-connection .btn-disconnect:hover:after {
+    background-image: url(https://i.imgur.com/LAyMjfz.png);
     opacity: 1;
 }
 /* Public Button */
@@ -1005,6 +1026,10 @@ a:link {
 .theme-dark.context-menu .item.disabled:hover {
     color: #fff;
     background-color: #8282ff !important;
+}
+.context-menu .item,
+.context-menu .item:hover {
+    color: #fff;
 }
 
 /* Connecting */
