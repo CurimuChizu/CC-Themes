@@ -1,4 +1,4 @@
-//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.0v"}*//
+//META{"name":"Red_n_Black","description":"Just a theme for the red and black fans with a hint of anime.","author":"CreamCheese (C.C.)","version":"3.5v"}*//
 
 /* 
 Hex color for everything: #9f0000
@@ -49,21 +49,12 @@ Hex color for texts: #D89191
 .theme-dark .messages-wrapper .messages .mentioned .message-text {
     animation: mentioned-pulse 1.5s infinite;
 }
-.theme-dark .friends-table .messages .divider span, 
-.theme-dark .friends-table .messages .divider:before, 
-.theme-dark .messages-wrapper .messages .divider span, 
-.theme-dark .messages-wrapper .messages .divider:before {
-    background-color: transparent;
-}
 .message-group .mentioned .message-text {
     background: rgba(250, 26, 26, 0.2);
     border-radius: 0 2px 2px 0;
 }
 .theme-dark .messages-wrapper .messages .mentioned .message-text {
     background: rgba(250, 26, 26, 0.1);
-}
-.chat .divider>span {
-    color: #F1F1F1;
 }
 .chat .welcome-message h1 {
     color: #9f0000;
@@ -85,10 +76,6 @@ Hex color for texts: #D89191
 .chat .has-more button {
     color: #9f0000;
 }
-.chat .divider.divider-red>span {
-    background: rgba(226, 0, 0, 0.6) !important;
-    color: rgb(251, 245, 245) !important;
-}
 .chat .welcome-message h1 {
     color: #9f0000;
     width: 360px;
@@ -106,7 +93,16 @@ Hex color for texts: #D89191
 .theme-dark .chat>.content .messages .divider:not(.red) span {
     opacity: 0.9;
     background: #9f0000 !important;
-    margin: 10px 0px !important;
+}
+.theme-dark .friends-table .messages .divider:not(.red) span, 
+.theme-dark .messages-wrapper .messages .divider:not(.red) span {
+    margin-top: 0px;
+}
+.theme-dark .friends-table .messages .divider span, 
+.theme-dark .friends-table .messages .divider:before, 
+.theme-dark .messages-wrapper .messages .divider span, 
+.theme-dark .messages-wrapper .messages .divider:before {
+    background-color: transparent;
 }
 .chat .new-messages-bar button:first-child {
     border-radius: 5px;
@@ -119,15 +115,12 @@ Hex color for texts: #D89191
 .chat .divider:not(.divider-red)>div {
     background: rgba(255, 255, 255, 0.2) !important;
 }
-.chat .divider>span {
-    background: rgba(255, 255, 255, 0.2) !important;
+.chat .divider:not(.divider-red)>span,
+.chat .divider.divider-red>span {
+    color: rgba(255, 255, 255, 1) !important;
 }
 .chat .divider.divider-red>span {
-    background: rgba(240, 71, 71, .6) !important;
-    color: rgba(255, 255, 255, 0.8) !important;
-}
-.chat .divider:not(.divider-red)>span {
-    color: rgba(255, 255, 255, 1) !important;
+    margin-top: 50px;
 }
 .chat .divider>div {
     display: none;
@@ -153,7 +146,8 @@ Hex color for texts: #D89191
     text-decoration: underline;
 }
 .highlight {
-    color: #9f0000;
+    color: #ffffff;
+    text-decoration: underline;
 }
 .highlight:hover {
     cursor: pointer;
@@ -210,9 +204,6 @@ Hex color for texts: #D89191
     color: rgba(255, 255, 255, 0.7) !important;
     padding: 0.3em 0.6em;
 }
-::-webkit-input-placeholder {
-  color: #9f0000 !important;
-}
 .avatar-large {
     width: 70px;
     height: 70px;
@@ -250,6 +241,24 @@ a:link {
 }
 .bot-tag {
     background: #9f0000;
+}
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
+    background: #6f0000;
+}
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+    background: #9f0000;
+    color: #fff;
+    border-radius: 3px;
+}
+.theme-dark .friends-table .messages .message-group-blocked.revealed, 
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
+    border-color: #9f0000;
+    background: rgba(179,25,25,0.35);
+}
+.theme-dark .friends-table .messages .message-group-blocked, 
+.theme-dark .messages-wrapper .messages .message-group-blocked {
+    background: transparent;
+    border-color: transparent;
 }
 
 /* Top Buttons */
@@ -366,7 +375,9 @@ a:link {
     transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28) !important;
     border: 1px solid rgba(159, 0, 0, 0.3);
 }
-
+.guild-header ul a.red-highlight {
+    color: #9f0000;
+}
 .guilds-add {
     opacity: 0.5;
 }
@@ -645,6 +656,10 @@ a:link {
 }
 
 /* Profile */
+#user-profile-modal {
+    width: 500px;
+    height: 500px;
+ }
 .avatar-profile {
     width: 128px;
     height: 128px;
@@ -731,9 +746,30 @@ a:link {
     background: #65676b;
     animation: reject-friend-pulse 1.5s infinite;
 }
+#user-profile-modal .guilds .section+.section {
+    border-top: 1px solid #9f0000;
+}
 .note textarea:focus {
     background: #D89191;
     border-radius: 8px;
+}
+.note textarea {
+	color: #fff;
+}
+span.discriminator:hover {
+    background: rgba(0, 0, 0, 0.32) !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+span.discriminator {
+    font-size: 11px !important;
+    color: hsla(0, 0%, 100%, 0.7) !important;
+    border-radius: 5px !important;
+    background: rgba(0, 0, 0, 0.19) !important;
+    font-weight: bold !important;
+    border: 3px solid transparent !important;
+    -webkit-transition: all 0.3s ease !important;
 }
 
 /* Emoji/Emotes */
@@ -1389,7 +1425,8 @@ a:link {
 .channel-notices .channel-notice .message .btn:hover {
     background-color: #6f0000;
 }
-.channel-notices .channel-notice .message {
+.channel-notices .channel-notice .message,
+.guild-header ul.treatment-1 a {
     color: #fff;
 }
 .guild-header ul.treatment-1 li:hover {
@@ -2028,7 +2065,8 @@ scroller.settings-wrapper.settings-panel {
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-red {
     background-color: #9f0000;
 }
-#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add:hover {
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add:hover,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover {
     background-color: #6f0000!important;
 }
 .guilds-wrapper .guilds .friends-online {
@@ -2424,9 +2462,6 @@ scroller.settings-wrapper.settings-panel {
 .theme-dark .chat>.content .messages .divider:not(.red) div {
     background: transparent;
 }
-.theme-dark .chat>.content .messages .divider span {
-    background: transparent;
-}
 .theme-dark .chat .title-wrap .topic a {
     color: #9f0000;
 }
@@ -2450,9 +2485,6 @@ scroller.settings-wrapper.settings-panel {
 }
 .channel-notification-settings .content .content-inner {
     background: transparent !important;
-}
-.guild-header ul a.red-highlight {
-    color: #9f0000;
 }
 .form header {
     color: #9f0000;
