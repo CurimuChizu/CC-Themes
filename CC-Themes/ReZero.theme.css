@@ -1,4 +1,4 @@
-//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.0"}*//
+//META{"name":"ReZero_Anime","description":"ReZero anime theme.","author":"CreamCheese (C.C.)","version":"2.3"}*//
 
 /* 
 Hex color for everything: #afafff
@@ -210,6 +210,24 @@ a:link {
 .theme-dark .messages-wrapper .messages .divider span, 
 .theme-dark .messages-wrapper .messages .divider:before {
     background-color: transparent;
+}
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
+    background: #8282ff;
+}
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+    background: #afafff;
+    color: #fff;
+    border-radius: 3px;
+}
+.theme-dark .friends-table .messages .message-group-blocked.revealed, 
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
+    border-color: #afafff;
+    background: rgba(122, 96, 202, 0.64);
+}
+.theme-dark .friends-table .messages .message-group-blocked, 
+.theme-dark .messages-wrapper .messages .message-group-blocked {
+    background: transparent;
+    border-color: transparent;
 }
 
 /* Pinning/Mentions */
@@ -2414,15 +2432,11 @@ search-bar-clear {
 span.discriminator {
     font-size: 11px !important;
     color: hsla(0, 0%, 100%, 0.7) !important;
-    margin-left: 8px !important;
     border-radius: 5px !important;
     background: rgba(0, 0, 0, 0.19) !important;
     font-weight: bold !important;
     border: 3px solid transparent !important;
     -webkit-transition: all 0.3s ease !important;
-    -moz-transition: all 0.3s ease !important;
-    -o-transition: all 0.3s ease !important;
-    -ms-transition: all 0.3s ease !important;
 }
 span.discriminator:hover {
     background: rgba(0, 0, 0, 0.32) !important;
