@@ -1,4 +1,5 @@
-#<DIV ALIGN=CENTER>CC-Themes<div>
+<DIV ALIGN=CENTER>Both themes are out of date!!<div>
+<DIV ALIGN=CENTER>CC-Themes<div>
 <font size="25"><b>To download the theme:</b></font>
 + Step 0: Click on the name of the desired theme
 + Step 1: Right click the raw button
@@ -9,7 +10,7 @@
 + Step 5: Restart Discord (CMD+R or CTRL+R)
 + Step 6: Open Discord Settings>BetterDiscord>Themes>Enable the theme
 
-##<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/Red.n.Black.theme.css">Red n Black</a></div>
+<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/Red.n.Black.theme.css">Red n Black</a></div>
 <DIV ALIGN=CENTER><b><i>A theme based red and black with a hint of anime (Up to date as of 9/10)</i></b>
 <img src="http://i.imgur.com/TdJImXS.png"/>
 <img src="http://i.imgur.com/n669pit.jpg"/>
