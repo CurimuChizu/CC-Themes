@@ -1,16 +1,7 @@
+<DIV ALIGN=CENTER><b><h1 class="md-display-3">Both themes are out of date!!</h1></b><div>
+<DIV ALIGN=CENTER>CC-Themes<div>
 
-#<DIV ALIGN=CENTER>CC-Themes<div>
-<font size="25"><b>To download the theme:</b></font>
-+ Step 0: Click on the name of the desired theme
-+ Step 1: Right click the raw button
-+ Step 2: Click save link as 
-+ Step 3: Windows-> Save to %appdata%\betterdiscord\themes\ 
-+ Step 3: IOS-> Save to ~/Library/Preferences/themes 
-+ Step 4: Make sure the extension is set as `.theme.css`
-+ Step 5: Restart Discord (CMD+R or CTRL+R)
-+ Step 6: Open Discord Settings>BetterDiscord>Themes>Enable the theme
-
-##<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/Red.n.Black.theme.css">Red n Black</a></div>
+<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/Red.n.Black.theme.css">Red n Black</a></div>
 <DIV ALIGN=CENTER><b><i>A theme based red and black with a hint of anime (Up to date as of 9/10)</i></b>
 <img src="http://i.imgur.com/TdJImXS.png"/>
 <img src="http://i.imgur.com/n669pit.jpg"/>
@@ -32,7 +23,7 @@ To change the background, just add the code below with a different link in the `
     background-repeat: no-repeat !important;
 }
 ```
-##<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/ReZero.theme.css">ReZero The Anime</a></div>
+<DIV ALIGN=CENTER><a href="https://github.com/CurimuChizu/CC-Themes/blob/master/CC-Themes/ReZero.theme.css">ReZero The Anime</a></div>
 <DIV ALIGN=CENTER><b><i>A theme based Re:Zero kara Hajimeru Isekai Seikatsu anime (Up to date as of 9/10)</i></b>
 <img src="http://i.imgur.com/rthaufN.jpg"/>
 <img src="http://i.imgur.com/QhU9gvh.jpg"/>
